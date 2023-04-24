@@ -1,0 +1,25 @@
+$primaryFont: "Open Sans", sans-serif;
+$secondaryFont:  "Domine", serif;
+$utility: 1rem;
+$helper: 0.8rem;
+$copyright: 0.64rem;
+
+h1 {
+   font-size: 3.052rem; 
+}
+h2 {
+    font-size: 2.441rem; 
+ }
+ h3 {
+    font-size: 1.953rem; 
+ }
+ h4 {
+    font-size: 1.563rem; 
+ }
+ h5 {
+    font-size: 1.25rem; 
+ }
+p {
+    font-size: 1rem;
+    font-family: $secondaryFont;
+}

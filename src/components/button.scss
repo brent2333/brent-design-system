@@ -1,0 +1,44 @@
+@import '../utils/colors.scss';
+@import '../utils/typography.scss';
+
+.brent-button {
+    padding: 12px 24px;
+    border: none;
+    min-width: 160px;
+    font-family: $primaryFont;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.brent-button--large {
+  font-size: $utility;
+  padding: 12px;
+}
+.brent-button--small {
+  font-size: $helper;
+  padding: 8px;
+}
+.brent-button.primary {
+  background-color: $blue-100;
+  color: $text-inverted;
+}
+.brent-button.secondary {
+  background-color: transparent;
+  border: 2px solid $blue-100;
+  color: $text-default;
+}
+.brent-button.tertiary {
+  background-color: transparent;
+  color: $text-default;
+}
+.brent-button.success {
+  background-color: $green-100;
+  color: $text-default;
+}
+.brent-button.error {
+  background-color: $red-100;
+  color: $text-inverted;
+}
+.brent-button.warning {
+  background-color: $yellow-100;
+  color: $text-default;
+}

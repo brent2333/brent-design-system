@@ -1,0 +1,56 @@
+@import "./colors.scss";
+@import "./typography";
+
+.default-theme {
+    background-color: "#ddd";
+    // primaryColor: blue[100],
+    // primaryColorFocus: blue[200],
+    // primaryColorActive: blue[400],
+    // disabledColor: neutral[300],
+    // textOnDisabled: text.default,
+    // textColorOnPrimary: text.inverted,
+    color: $text-default;
+    .form-wrapper {
+        background-color: $neutral-200;
+        color: $text-default;
+    }
+    font-family: $primaryFont;
+    // status: {
+    //     warningColor: yellow[100],
+    //     warningColorHover: yellow[300],
+    //     warningColorActive: yellow[200],
+    //     errorColor: red[100],
+    //     errorColorHover: red[200],
+    //     errorColorActive: red[300],
+    //     successColor: green[100],
+    //     successColorHover: green[200],
+    //     successColorActive: green[300]
+    //   }
+}
+
+.dark-theme {
+    background-color: "#333";
+    // primaryColor: neutral[100],
+    // primaryColorFocus: neutral[200],
+    // primaryColorActive: neutral[400],
+    // disabledColor: neutral[300],
+    // textOnDisabled: blue[400],
+    // textColorOnPrimary: text.default,
+    color: $text-inverted;
+    .form-wrapper {
+        background-color: $neutral-500;
+        color: $text-inverted;
+    }
+    font-family: $primaryFont;
+    // status: {
+    //     warningColor: yellow[100],
+    //     warningColorHover: yellow[300],
+    //     warningColorActive: yellow[200],
+    //     errorColor: red[100],
+    //     errorColorHover: red[200],
+    //     errorColorActive: red[300],
+    //     successColor: green[100],
+    //     successColorHover: green[200],
+    //     successColorActive: green[300]
+    //   }
+}
