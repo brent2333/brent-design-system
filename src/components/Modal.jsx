@@ -1,8 +1,9 @@
 import React from "react";
-import { PrimaryButton } from "./Buttons";
+import { Button } from "./Button";
 import { Illustrations, CloseIcon } from "../assets";
 import { useSpring, animated, config } from "react-spring";
 import './modal.scss';
+import '../utils/global.scss';
 
 export const SignUpModal = ({ showModal, setShowModal }) => {
     const animation = useSpring({
@@ -18,9 +19,9 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
         <p>
           Sign up today to get access to all of our content and features!
         </p>
-        <PrimaryButton onClick={() => console.log("You signed up!")}>
+        <Button mode="primary" label="Sign Up" onClick={() => console.log("You signed up!")}>
           Sign Up
-        </PrimaryButton>
+        </Button>
         <button className="close-modal" aria-label="Close Modal">
             <CloseIcon/>
         </button>
