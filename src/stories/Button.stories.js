@@ -9,6 +9,10 @@ export default {
     mode: {
       options: ['primary', 'secondary', 'tertiary', 'success', 'error', 'warning'],
       control: { type: 'radio' },
+    },
+    disabled: {
+      options: [true, false],
+      control: { type: 'radio' },
     }
   },
 };

@@ -2,43 +2,104 @@
 @import '../utils/typography.scss';
 
 .brent-button {
-    padding: 12px 24px;
+  border: none;
+  min-width: 50px;
+  font-family: $primaryFont;
+  cursor: pointer;
+  margin-bottom: 10px;
+  &:disabled {
+    background-color: $neutral-300 !important;
     border: none;
-    min-width: 160px;
-    font-family: $primaryFont;
-    cursor: pointer;
-    margin-bottom: 10px;
+    color: $text-default !important;
+  }
+  &:focus {
+    background-color: $blue-200 !important;
+    outline: 2px solid $blue-200;
+    outline-offset: 3px;
+    color: $text-default !important;
+    border: none !important;
+  }
+  &:active {
+      background-color: $blue-400 !important;
+      color: $text-default !important;
+      border: none !important;
+      outline: none !important;
+  }
 }
 .brent-button--large {
   font-size: $utility;
-  padding: 12px;
+  padding: 12px 24px;
 }
 .brent-button--small {
   font-size: $helper;
-  padding: 8px;
+  padding: 8px 12px;
 }
 .brent-button.primary {
   background-color: $blue-100;
   color: $text-inverted;
+  &:hover:not([disabled]) {
+    background-color: $blue-200;
+    color: $text-default; 
+  }
 }
 .brent-button.secondary {
   background-color: transparent;
   border: 2px solid $blue-100;
   color: $text-default;
+  &:hover:not([disabled]) {
+    background-color: $blue-100;
+    color: $text-inverted; 
+  }
 }
 .brent-button.tertiary {
   background-color: transparent;
   color: $text-default;
+  &:hover:not([disabled]) {
+    border: 2px solid $blue-100;
+  }
 }
 .brent-button.success {
   background-color: $green-100;
   color: $text-default;
+  &:hover:not([disabled]) {
+    background-color: $green-200;
+    color: $text-inverted;
+  }
+  &:focus {
+    background-color: $green-200 !important;
+    outline: 2px solid $green-100;
+    outline-offset: 3px;
+    color: $text-inverted !important;
+  }
 }
 .brent-button.error {
   background-color: $red-100;
   color: $text-inverted;
+  &:hover:not([disabled]) {
+    background-color: $red-200;
+    color: $text-inverted;
+  }
+  &:focus {
+    background-color: $red-200 !important;
+    outline: 2px solid $red-200;
+    outline-offset: 3px;
+    color: $text-inverted !important;
+  }
 }
 .brent-button.warning {
   background-color: $yellow-100;
   color: $text-default;
+  &:hover:not([disabled]) {
+    background-color: $yellow-200;
+    color: $text-inverted;
+  }
+  &:focus {
+    background-color: $yellow-100 !important;
+    outline: 2px solid $yellow-100;
+    outline-offset: 3px;
+  }
+}
+/* Theme nesting */
+.dark-theme .brent-button.primary {
+
 }

@@ -5,10 +5,12 @@ import './button.scss';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ mode, backgroundColor, size, label, ...props }) => {
+export const Button = ({ mode, disabled, size, label, ...props }) => {
+  const disabledState = disabled ? "disabled" : "";
   return (
     <button
       type="button"
+      disabled={disabledState}
       className={['brent-button', `brent-button--${size}`, mode].join(' ')}
       {...props}
     >
@@ -40,4 +42,5 @@ Button.defaultProps = {
   mode: 'primary',
   size: 'large',
   onClick: undefined,
+  disabled: false
 };
